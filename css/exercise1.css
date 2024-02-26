@@ -1,0 +1,8 @@
+/* Set the layout of the form to be a column and centered */
+#interactiveForm {
+}
+
+/* Set the outline of each form element to be the accent color */
+
+#interactiveForm input:focus {
+}

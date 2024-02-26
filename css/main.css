@@ -1,0 +1,309 @@
+:root {
+	--background-color: #fff;
+	--inset-background-color: #d5d5d5;
+	--accent-color: #5da9e9;
+	--secondary-accent-color: #7bfe93;
+
+	--sky-color-dawn: #0a2e36;
+	--sky-color-morning: #7ec8e3;
+	--sky-color-noon: #87ceeb;
+	--sky-color-sunset: #ffd1cf;
+	--sky-color-dusk: #342e5f;
+}
+
+body {
+	background-color: var(--background-color);
+	font-family: "Roboto mono", sans-serif;
+	color: black;
+	font-size: 20px;
+	line-height: 1.6;
+	padding-top: 100px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: bolder;
+	margin: 0;
+	text-align: center;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	background-color: var(--background-color);
+	font-size: 1rem;
+	z-index: 100;
+}
+
+#logo-box {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+nav img {
+	height: 40px;
+	padding: 20px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0px;
+	padding: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	display: inline-block;
+	color: var(--text-color);
+	padding: 0 20px;
+	transition: 0.3s ease;
+}
+
+nav a:hover {
+	color: var(--accent-color);
+}
+
+nav a:active {
+	color: var(--secondary-accent-color);
+	scale: 0.95;
+}
+
+header {
+	background-color: #fff;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+header img {
+	width: 400px;
+	height: auto;
+}
+
+#landingPageText {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: center;
+	align-items: start;
+	width: 400px;
+	height: 406px;
+}
+
+#personalInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.button {
+	background-color: var(--outset-bg-color);
+	color: var(--text-color);
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: var(--accent-color) solid;
+	margin-top: 5px;
+	font-size: smaller;
+	transition: 0.3s ease;
+}
+
+.button:hover {
+	background-color: var(--accent-color);
+	color: white;
+}
+
+.button:active {
+	scale: 0.95;
+}
+
+.button.highlighted {
+	animation-name: highlighted;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes highlighted {
+	0% {
+		background-color: var(--accent-color);
+	}
+	50% {
+		background-color: var(--secondary-accent-color);
+	}
+	100% {
+		background-color: var(--accent-color);
+	}
+}
+
+.insetButton {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.insetButton:hover {
+	background-color: var(--accent-color);
+	color: var(--bg-color);
+}
+
+section {
+	margin: 20px 0px 20px 0px;
+}
+
+section img {
+	width: 105px;
+	height: auto;
+}
+
+section p {
+	margin: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+
+#about {
+	padding: 50px 50px;
+	text-align: left;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #5da9e9;
+	background-image: linear-gradient(
+			to right,
+			rgb(255, 255, 255) 1px,
+			transparent 1px
+		),
+		linear-gradient(to bottom, rgb(255, 255, 255) 1px, transparent 1px);
+	background-size: 50px 50px; /* Adjust grid size as per your preference */
+	background-attachment: fixed;
+}
+
+.about-text {
+	width: 500px;
+	padding: 20px;
+	border: var(--background-color) solid;
+	border-radius: 20px;
+	color: var(--background-color);
+	background-color: var(--accent-color);
+}
+
+.about-item-img {
+	width: 200px;
+}
+
+#about p {
+	text-align: left;
+}
+
+#exercise2 {
+	margin: 20px;
+	text-align: center;
+}
+
+.exercise {
+	min-height: 50vh;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+#exercise3,
+#exercise5 {
+	display: grid;
+	place-items: center;
+}
+
+/* Exercise 1 */
+
+#interactiveForm input {
+	border-radius: 20px;
+	width: 50%;
+	height: 1.5em;
+	padding: 10px;
+}
+
+#interactiveForm {
+	height: 100%;
+}
+
+/* Exercise 4 */
+
+#moving-box {
+	position: relative;
+	height: 50vh;
+	background-color: var(--inset-background-color);
+	width: 95vw;
+	margin-left: 2.5vw;
+	margin-top: 50px;
+}
+
+#box {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	transform: translate(-50%, -50%);
+	background-color: var(--accent-color);
+}
+
+/* Exercise 5 */
+
+#interactiveButton {
+	background-color: var(--accent-color);
+	color: var(--background-color);
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: var(--accent-color) solid;
+	margin-top: 5px;
+	font-size: smaller;
+	cursor: pointer;
+}
+
+/* Exercise 6 */
+#sky {
+	width: 100%;
+	height: 80vh;
+	background-color: var(--sky-color-morning);
+}
+
+#sun {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	height: 100px;
+	background-color: #f7d970;
+	border-radius: 50%;
+	filter: drop-shadow(0 0 20px #f7d970) drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+}
+
+footer {
+	background-color: #222;
+	color: #fff;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #ccc;
+	font-size: smaller;
+}

@@ -1,0 +1,13 @@
+#sun {
+}
+
+#sky {
+}
+
+/* Make the sun move across the screen in an arc using positon */
+@keyframes sunCycle {
+}
+
+/* Have the sky changing colors based off the sky color variables */
+@keyframes skyCycle {
+}
