@@ -1,3 +1,20 @@
 /* #card-grid */
 
+#card-grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 /* .card */
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 230px;
+	height: 300px;
+	outline: var(--accent-color) solid 1px;
+	margin: 10px;
+	border-radius: 15px;
+}

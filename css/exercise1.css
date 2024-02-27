@@ -1,8 +1,12 @@
 /* Set the layout of the form to be a column and centered */
 #interactiveForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* Set the outline of each form element to be the accent color */
 
 #interactiveForm input:focus {
+	outline: var(--accent-color) 10px solid;
 }

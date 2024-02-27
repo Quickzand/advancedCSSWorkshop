@@ -1,13 +1,58 @@
 #sun {
+	animation-name: sunCycle;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
 }
 
 #sky {
+	animation-name: skyCycle;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
 }
 
 /* Make the sun move across the screen in an arc using positon */
 @keyframes sunCycle {
+	0% {
+		left: -50%;
+		top: 50%;
+	}
+	25% {
+		left: 25%;
+		top: 45%;
+	}
+	50% {
+		left: 50%;
+		top: 25%;
+	}
+	75% {
+		left: 75%;
+		top: 45%;
+	}
+	100% {
+		left: 150%;
+		top: 50%;
+	}
 }
 
 /* Have the sky changing colors based off the sky color variables */
 @keyframes skyCycle {
+	0% {
+		background-color: var(--sky-color-dawn);
+	}
+	25% {
+		background-color: var(--sky-color-morning);
+	}
+	50% {
+		background-color: var(--sky-color-noon);
+	}
+	75% {
+		background-color: var(--sky-color-sunset);
+	}
+	100% {
+		background-color: var(--sky-color-dusk);
+	}
 }

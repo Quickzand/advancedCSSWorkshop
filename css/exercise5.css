@@ -1,9 +1,16 @@
 #interactiveButton {
+	transition-property: all;
+	transition-duration: 0.5s;
 }
 
 #interactiveButton:hover {
+	scale: 1.2;
+	outline: var(--secondary-accent-color) solid 3px;
 }
 
 /* Make it slightly smaller with the background color being --secondary-accent-color */
 #interactiveButton:active {
+	scale: 0.95;
+	outline: var(--accent-color) solid 3px;
+	background-color: var(--secondary-accent-color);
 }
